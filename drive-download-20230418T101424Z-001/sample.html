@@ -1,0 +1,1432 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <title>GWのおすすめグルメ＆お土産特集 | NEXCO西日本のSA・PA情報サイト</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="common_pc.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="souvenir.css">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries"
+        href="https://www.nx1.spcom.co.jp/atom.xml" />
+    <script type="text/javascript" src="/js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/js/jquery.timers.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/js/common.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/js/wide_map.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/js/jquery.belatedPNG.min.js"></script>
+    <script type="text/javascript" src="/js/fontsize.js"></script>
+    <script type="text/javascript" src="/js/lib.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        (function ($) {
+            $(function () {
+                $(".png_bg").fixPng();
+            });
+        })(jQuery);
+        //]]>
+    </script>
+    <script type="text/javascript" src="/js/thickbox.js"></script>
+    <script type="text/javascript" src="/js/jquery.tile.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".staff-box").tile(3);
+        });
+    </script>
+    <link href="/css/thickbox.css" rel="stylesheet" type="text/css" />
+    <script>
+        function setWESTAREA(westarea) {
+            document.getElementById('map_img').src = '/images/common/map_search/' + westarea;
+        }
+
+        function setKINKI(kinki) {
+            document.getElementById('map_kinki').src = '/images/common/map_search/' + kinki;
+        }
+
+        function setCHUGOKU(chugoku) {
+            document.getElementById('map_chugoku').src = '/images/common/map_search/' + chugoku;
+        }
+
+        function setSHIKOKU(shikoku) {
+            document.getElementById('map_shikoku').src = '/images/common/map_search/' + shikoku;
+        }
+
+        function setKYUSYU(kyusyu) {
+            document.getElementById('map_kyusyu').src = '/images/common/map_search/' + kyusyu;
+        }
+
+        function restoreMap() {
+            document.getElementById('map_img').src = '/images/common/map_search/west_area_map_base.gif';
+            document.getElementById('map_kinki').src = '/images/common/map_search/map_1_kinki.jpg?20220427';
+            document.getElementById('map_chugoku').src = '/images/common/map_search/map_2_chugoku.jpg';
+            document.getElementById('map_shikoku').src = '/images/common/map_search/map_3_shikoku.jpg?20220427';
+            document.getElementById('map_kyusyu').src = '/images/common/map_search/map_4_kyusyu.jpg';
+        }
+    </script>
+
+
+
+    <link href="/css/common.css?date=20200310" rel="stylesheet" type="text/css" />
+    <link href="/css/common/import_pc.css" rel="stylesheet" type="text/css">
+    <link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
+    <script type="text/javascript" src="/js/sepa.js" charset="UTF-8"></script>
+    <link href="/css/sidebar.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/stickytooltip.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/js/jquery.tools.min.js" charset="UTF-8"></script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NR7XS2P');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NR7XS2P" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--// header start//-->
+    <div id="header">
+        <div class="fixbar clearfix disphone">
+            <div id="home"><a href="/"><img src="/images/common/sp_btn_home.gif" alt="ホーム" width="36" height="34"></a>
+            </div>
+            <div class="site-title">
+                <p>サービスエリア情報</p>
+            </div>
+            <div id="openMenu" class="closeMenuClass"><img src="/images/common/sp_btn_menu.gif" alt="メニュー" width="36"
+                    height="34"></div>
+        </div>
+        <!--fixbar-->
+        <div class="sp-topheader">
+            <div class="logo"><a href="/" target="_top"><img src="/images/common/logo.jpg" width="100" height="49"
+                        alt="NEXCO 西日本" /></a></div>
+            <div id="site-select" class="resphone">
+                <ul class="site">
+                    <li><a href="https://www.w-nexco.co.jp/"><img src="/images/common/icn_siteselect_search_out.gif"
+                                alt="料金・交通サイト"></a></li>
+                    <li class="on"><a href="https://www.w-holdings.co.jp/"><img
+                                src="/images/common/icn_siteselect_service_on.gif" alt="サービスエリア情報サイト"></a></li>
+                    <li><a href="https://corp.w-nexco.co.jp/"><img src="/images/common/icn_siteselect_corp_out.gif"
+                                alt="企業情報サイト"></a></li>
+                </ul>
+            </div>
+            <div class="site-select disphone">
+                <ul class="site">
+                    <li><a href="https://www.w-nexco.co.jp/"><img src="/images/common/sp_icn_siteselect_search_out.gif"
+                                alt="料金・交通サイト" width="44" height="44"></a></li>
+                    <li><a href="https://www.w-holdings.co.jp/"><img
+                                src="/images/common/sp_icn_siteselect_service_ovr.gif" alt="サービスエリア情報サイト" width="94"
+                                height="44"></a></li>
+                    <li><a href="https://corp.w-nexco.co.jp/"><img src="/images/common/sp_icn_siteselect_corp_out.gif"
+                                alt="企業情報サイト" width="44" height="44"></a></li>
+                </ul>
+            </div>
+            <div class="header-sideBox resphone">
+                <div class="col infomation">
+                    <ul>
+                        <li><a href="https://www.w-nexco.co.jp/faq/" target="_top">よくあるご質問</a></li>
+                        <li><a href="https://www.w-nexco.co.jp/inquiry/" target="_top">お問い合わせ</a></li>
+                        <li><a href="https://www.w-nexco.co.jp/disabled/" target="_top">お身体の不自由な方</a></li>
+                        <li class="select">language
+                            <ul>
+                                <li><a href="http://global.w-nexco.co.jp/en/">ENGLISH</a></li>
+                                <li><a href="http://global.w-nexco.co.jp/cn/">簡体字</a></li>
+                                <li><a href="http://global.w-nexco.co.jp/tw/">繁体字</a></li>
+                                <li><a href="http://global.w-nexco.co.jp/kr/">한국어</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <script type="text/javascript" src="/js/languageList.js"></script>
+                </div>
+                <div id="switch_list" class="col font">
+                    <dl>
+                        <dt>文字サイズ：</dt>
+                        <dd>
+                            <ul id="fontSize">
+                                <li id="s_size"><a href="#"><img class="changeBtn" src="/images/common/btn_s.gif"
+                                            alt="小"></a></li>
+                                <li id="m_size"><a href="#"><img class="changeBtn active" src="/images/common/btn_m.gif"
+                                            alt="中"></a></li>
+                                <li id="l_size"><a href="#"><img class="changeBtn" src="/images/common/btn_l.gif"
+                                            alt="大"></a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <!--　▼▼▼▼検索▼▼▼▼　-->
+                <div id="srch">
+                    <form name="SS_searchForm" id="SS_searchForm" action="https://pro.syncsearch.jp/search" method="get"
+                        enctype="application/x-www-form-urlencoded">
+                        <input name="site" value="9OVIPIKM" type="hidden">
+                        <input name="charset" value="UTF-8" type="hidden">
+                        <input name="design" value="1" type="hidden">
+                        <input name="query" size="25" class="searchBox" value="" id="SS_searchQuery" maxlength="100"
+                            autocomplete="off" type="text">
+                        <!--input name="sa" value="Search" type="image" src="/images/common/btn_search.gif" alt="検索" class="searchbtn" /-->
+                        <button type="submit" name="sa" value="Search" class="searchbtn"><img
+                                src="/images/common/btn_search.gif"></button>
+                    </form>
+                    <script type="text/javascript" src="https://ssl.syncsearch.jp/common/js/sync_suggest.js"></script>
+                    <script type="text/javascript">
+                        SYNCSEARCH_SITE = "9OVIPIKM";
+                        SYNCSEARCH_GROUP = 0;
+                        SYNCSEARCH_GROUP1 = 1;
+                    </script>
+                </div>
+                <!--　▲▲▲▲検索▲▲▲▲　-->
+            </div>
+            <!--header-side-->
+        </div>
+        <!--sp-topheader-->
+    </div>
+    <!--// header end//-->
+    <!-- ▼wrapperここから -->
+    <div id="wrapper">
+        <!--// gnav start//-->
+        <div id="tab_menu" class="g-nav resphone">
+            <ul id="nav_list" class="nav">
+                <li><a href="/"><img src="/images/common/gnav_home_out.gif" alt="HOME"></a></li>
+                <li id="tab_menu_1" class="tab_menu_li" ref="#panel_2" refsel="" refimg="05"><a href="#"
+                        class="png_bg"><img id="mapSearch" class="" src="/images/common/gnavi_map_02_out.gif"
+                            alt="地図から探す"></a></li>
+                <li id="tab_menu_4" ref="#panel_4" refsel="" refimg="08"><a href="/service/" class="png_bg"
+                        id="facilitySearch"><img src="/images/common/gnavi_service_02_out.gif" alt="施設・サービスから探す"></a>
+                </li>
+                <li id="tab_menu_2" class="on tab_menu_li" ref="#panel_1" refsel="sel" refimg="06"><a href="#"
+                        class="png_bg"><img id="sceneSearch" class="" src="/images/common/gnavi_scene_02_atv.gif"
+                            alt="特集・シーンから探す"></a></li>
+                <li id="tab_menu_5" ref="#panel_4" refsel="" refimg="09"><a href="/search.html" class="png_bg"
+                        id="areaSearch"><img src="/images/common/gnavi_search_02_out.gif" alt="エリア名・複数条件から探す"></a></li>
+                <li class="sub"><a href="/news/"><img src="/images/common/gnavi_news_02_out.gif" alt="ニュース"></a></li>
+                <li class="sub"><a
+                        href="/cgi-bin/mt/mt-estraier.cgi?blog_id=3&limit=10&no_query=1&target=3&display=pc_mode&type=event"><img
+                            src="/images/common/gnavi_event_02_out.gif" alt="イベント・キャンペーン"></a></li>
+                <li class="sub"><a href="/coupon/"><img src="/images/common/gnavi_coupon_02_out.png" alt="クーポン"></a>
+                </li>
+                <li class="sub"><a href="/company/"><img src="/images/common/gnavi_company_02_out.png" alt="企業情報"></a>
+                </li>
+                <li class="sub"><a href="/tenant/"><img src="/images/common/gnavi_tenant_02_out.png" alt="テナント情報"></a>
+                </li>
+            </ul>
+        </div>
+        <!--// gnav end//-->
+        <!--▽パネル-->
+        <div id="panel_area">
+            <div id="panel">
+                <ul id="panel_list" class="clearfix">
+                    <!--▽パネル一枚目(特集・シーンから探す)-->
+                    <li id="panel_1">
+                        <div id="scene_ttl" class="clearfix">
+                            <h3>特集・シーンからサービスエリア・パーキングエリアを探す</h3>
+                            <p><a href="/special/"><img src="/images/index/btn_index_03.jpg" width="98" height="26"
+                                        alt="一覧はこちら" /></a></p>
+                        </div>
+                        <!--▽カルーセルの外枠-->
+                        <div id="carousel_box">
+                            <ul id="carousel" class="clearfix">
+                                <li id="li1">
+                                    <a href="/special/gourmet/softcream.html">
+                                        <img src="/images/common/special_bn/bn_special_l_01.jpg" width="308"
+                                            height="139" alt="SA自慢のソフトクリーム大集合" />
+                                        <h4>ソフトクリーム大集合！</h4>
+                                        <p>プレーン味、トッピングソフト！色んな味を楽しみたいバリエーションタイプ？どのソフトクリーム食べる？</p>
+                                    </a>
+                                </li>
+                                <!--<li id="li2">
+<a href="/special/gourmet/original.html">
+<img src="/images/common/special_bn/bn_special_l_03.jpg" width="308" height="139" alt="高速オリジナル弁当" />
+<h4>ＳＡでご当地弁当を堪能する！</h4>
+<p>各地の名物弁当など美味しい弁当が満載！是非チェックして！</p>
+</a>
+</li>-->
+                                <li id="li2">
+                                    <a href="/special/gourmet/local.html">
+                                        <img src="/images/common/special_bn/bn_special_l_02.jpg" width="308"
+                                            height="139" alt="ご当地グルメ" />
+                                        <h4>ご当地グルメ</h4>
+                                        <p>お客さまに地域の食材を楽しんでいただける、様々なご当地メニューをご用意しています。</p>
+                                    </a>
+                                </li>
+                                <li id="li3">
+                                    <a href="/special/etc/pet.html">
+                                        <img src="/images/common/special_bn/bn_special_l_05.jpg" width="308"
+                                            height="139" alt="ペットとお出かけ" />
+                                        <h4>ペットとお出かけ</h4>
+                                        <p>愛犬と行きたいサービスエリア！ドックランにドッグカフェ！ペットとお出かけにうれしい情報満載！</p>
+                                    </a>
+                                </li>
+                                <li id="li4">
+                                    <a href="/special/gourmet/hamburger.html">
+                                        <img src="/images/common/special_bn/bn_special_l_07.jpg" width="308"
+                                            height="139" alt="ハンバーガーが食べたい" />
+                                        <h4>ハンバーガーが食べたい</h4>
+                                        <p>ヘルシー派？ガッツリ派？他にはない味のバーガーなどの個性派？アナタはどのバーガーにする？</p>
+                                    </a>
+                                </li>
+                                <li id="li5">
+                                    <a href="/special/etc/unique.html">
+                                        <img src="/images/common/special_bn/bn_special_l_09.jpg" width="308"
+                                            height="139" alt="おもしろSA＆PA大集合！！" />
+                                        <h4>おもしろSA＆PA大集合！！</h4>
+                                        <p>えっこれがサービスエリア？こんなパーキング見たことないというようなSA＆PAをご紹介！</p>
+                                    </a>
+                                </li>
+                                <li id="li6">
+                                    <a href="/special/etc/baby.html">
+                                        <img src="/images/common/special_bn/bn_special_l_11.jpg" width="308"
+                                            height="139" alt="赤ちゃん連れでも安心便利なサービスエリアをご紹介" />
+                                        <h4>赤ちゃん連れでも安心便利！</h4>
+                                        <p>パパママをサポートする安心便利なサービスエリアをご案内！</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--△カルーセルの外枠-->
+                        <p id="left_btn" ref="1"><img src="/images/index/btn_index_01.jpg" width="10" height="200"
+                                alt="前へ" /></p>
+                        <p id="right_btn" ref="1"><img src="/images/index/btn_index_02.jpg" width="10" height="200"
+                                alt="次へ" /></p>
+                    </li>
+                    <!--△パネル一枚目(特集・シーンから探す)-->
+                    <!--▽パネル2枚目(地図から探す)-->
+                    <li id="panel_2" class="clearfix">
+                        <h3>地図から探す</h3>
+                        <!--▽右側・エリア選択マップ-->
+                        <div id="area_select_map">
+                            <img src="/images/common/map_search/west_area_map_base.gif" alt="西日本エリア地図" width="390"
+                                height="232" border="0" usemap="#Map" id="map_img" name="map_img" />
+                            <map name="Map" id="Map">
+                                <area shape="poly"
+                                    coords="256,64,260,79,248,93,248,100,260,102,268,109,252,121,255,129,259,126,272,112,277,112,277,118,269,126,266,132,261,139,267,150,267,157,281,167,292,158,290,150,297,145,300,127,362,127,361,110,315,110,325,96,321,74,302,84,291,74,283,75,287,69,285,64,271,67,256,65"
+                                    alt="近畿エリア" onMouseOver="setWESTAREA('west_kinki_on.jpg');"
+                                    onMouseOut="restoreMap();" class="select_map" rel="map_1_kinki" />
+                                <area shape="poly"
+                                    coords="122,95,125,82,137,87,161,69,193,63,194,56,218,56,218,63,231,61,232,63,255,64,257,79,246,92,246,99,232,107,214,104,201,110,189,111,180,106,173,103,168,109,168,113,175,117,165,118,152,112,135,101,131,106,121,96"
+                                    alt="中国エリア" onMouseOver="setWESTAREA('west_chugoku_on.jpg');"
+                                    onMouseOut="restoreMap();" class="select_map" rel="map_2_chugoku" />
+                                <area shape="poly"
+                                    coords="192,115,195,122,210,123,215,115,226,111,236,117,244,121,248,126,245,133,248,136,248,140,235,144,262,159,263,173,186,173,185,158,188,159,182,160,178,166,180,170,172,166,167,164,168,160,161,155,166,148,161,140,166,130,179,130,181,121,190,116"
+                                    alt="四国エリア" onMouseOver="setWESTAREA('west_shikoku_on.jpg');"
+                                    onMouseOut="restoreMap();" class="select_map" rel="map_3_shikoku" />
+                                <area shape="poly"
+                                    coords="119,100,102,100,96,107,84,112,79,110,79,101,81,96,76,96,73,73,79,61,74,60,60,78,63,81,69,79,74,94,77,112,69,114,64,116,60,119,47,120,26,135,34,139,59,125,53,135,53,145,66,148,87,150,91,152,73,154,69,164,74,179,60,180,54,186,75,192,66,200,78,211,79,217,97,213,101,207,107,212,131,163,144,157,144,141,131,135,142,130,142,120,127,122,119,115,120,102"
+                                    alt="九州エリア" onMouseOver="setWESTAREA('west_kyusyu_on.jpg');"
+                                    onMouseOut="restoreMap();" class="select_map" rel="map_4_kyusyu" />
+                            </map>
+                        </div>
+                        <!--△右側・エリア選択マップ-->
+                        <!--▽左側・エリア別路線絞り込みマップ-->
+                        <ul id="narrowing_map">
+                            <!--近畿マップ-->
+                            <li id="map_1_kinki">
+                                <img src="/images/common/map_search/map_1_kinki.jpg?20220427" alt="近畿エリア" width="589"
+                                    height="218" border="0" usemap="#Map2" id="map_kinki" name="map_kinki" />
+                                <map name="Map2" id="Map2">
+                                    <area shape="rect" coords="496,10,578,40" href="#" class="setMainMap" relX="4315"
+                                        relY="987" alt="名神高速道路・新名神高速道路" onMouseOver="setKINKI('map_1-1.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="443,103,518,133" href="#" class="setMainMap" relX="4213"
+                                        relY="1054" alt="近畿自動車道・第二京阪道路" onMouseOver="setKINKI('map_1-2.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="416,137,497,158" href="#" class="setMainMap" relX="4192"
+                                        relY="1250" alt="西名阪自動車道" onMouseOver="setKINKI('map_1-3.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="380,165,455,197" href="#" class="setMainMap" relX="4000"
+                                        relY="1425" alt="阪和自動車道・湯浅御坊道路" onMouseOver="setKINKI('map_1-4.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="261,106,337,137" href="#" class="setMainMap" relX="3849"
+                                        relY="1160" alt="第二神明道路・姫路バイパス" onMouseOver="setKINKI('map_1-5.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="177,60,258,80" href="#" class="setMainMap" relX="3847"
+                                        relY="1081" alt="山陽自動車道" onMouseOver="setKINKI('map_1-6.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="185,28,267,49" href="#" class="setMainMap" relX="3942"
+                                        relY="1055" alt="中国自動車道" onMouseOver="setKINKI('map_1-7.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="276,6,373,27" href="#" class="setMainMap" relX="3940"
+                                        relY="792" alt="舞鶴若狭自動車道" onMouseOver="setKINKI('map_1-8.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="395,25,491,47" href="#" class="setMainMap" relX="4125"
+                                        relY="906" alt="京都縦貫自動車道" onMouseOver="setKINKI('map_1-9.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                </map>
+                            </li>
+                            <!--中国マップ-->
+                            <li id="map_2_chugoku">
+                                <img src="/images/common/map_search/map_2_chugoku.jpg" alt="中国エリア" width="589"
+                                    height="218" border="0" usemap="#Map3" id="map_chugoku" name="map_chugoku" />
+                                <map name="Map3" id="Map3">
+                                    <area shape="rect" coords="296,5,378,24" href="#" class="setMainMap" relX="2752"
+                                        relY="738" alt="山陰自動車道" onMouseOver="setCHUGOKU('map_2-1.jpg');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="411,50,493,71" href="#" class="setMainMap" relX="3172"
+                                        relY="811" alt="米子自動車道" onMouseOver="setCHUGOKU('map_2-2.jpg');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="476,106,557,127" href="#" class="setMainMap" relX="2949"
+                                        relY="1000" alt="中国自動車道" onMouseOver="setCHUGOKU('map_2-3.jpg');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="301,110,383,131" href="#" class="setMainMap" relX="3182"
+                                        relY="1089" alt="岡山自動車道" onMouseOver="setCHUGOKU('map_2-4.jpg');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="362,155,444,176" href="#" class="setMainMap" relX="2946"
+                                        relY="1279" alt="山陽自動車道" onMouseOver="setCHUGOKU('map_2-5.jpg');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="222,151,305,171" href="#" class="setMainMap" relX="2548"
+                                        relY="1276" alt="広島自動車道" onMouseOver="setCHUGOKU('map_2-6.jpg');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="181,38,263,59" href="#" class="setMainMap" relX="2523"
+                                        relY="1093" alt="浜田自動車道" onMouseOver="setCHUGOKU('map_2-7.jpg');"
+                                        onMouseOut="restoreMap();" />
+                                </map>
+                            </li>
+                            <!--四国マップ-->
+                            <li id="map_3_shikoku">
+                                <img src="/images/common/map_search/map_3_shikoku.jpg?20220427" alt="四国エリア" width="589"
+                                    height="218" border="0" usemap="#Map4" id="map_shikoku" name="map_shikoku" />
+                                <map name="Map4" id="Map4">
+                                    <area shape="rect" coords="438,28,520,50" href="#" class="setMainMap" relX="3300"
+                                        relY="1432" alt="高松自動車道" onMouseOver="setSHIKOKU('map_3-1.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="439,92,520,113" href="#" class="setMainMap" relX="3442"
+                                        relY="1538" alt="徳島自動車道" onMouseOver="setSHIKOKU('map_3-2.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="279,130,361,152" href="#" class="setMainMap" relX="3123"
+                                        relY="1839" alt="高知自動車道" onMouseOver="setSHIKOKU('map_3-3.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="80,58,162,77" href="#" class="setMainMap" relX="2830"
+                                        relY="1694" alt="松山自動車道" onMouseOver="setSHIKOKU('map_3-4.jpg?20220427');"
+                                        onMouseOut="restoreMap();" />
+                                </map>
+                            </li>
+                            <!--九州マップ-->
+                            <li id="map_4_kyusyu">
+                                <img src="/images/common/map_search/map_4_kyusyu.jpg?20180730" alt="九州エリア" width="589"
+                                    height="218" border="0" usemap="#Map5" id="map_kyusyu" name="map_kyusyu" />
+                                <map name="Map5" id="Map5">
+                                    <area shape="rect" coords="342,2,423,24" href="#" class="setMainMap" relX="1538"
+                                        relY="1734" alt="九州自動車道" onMouseOver="setKYUSYU('map_4-1.jpg?20180730');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="355,29,443,49" href="#" class="setMainMap" relX="1790"
+                                        relY="1810" alt="東九州自動車道" onMouseOver="setKYUSYU('map_4-2.jpg?20180730');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="370,55,453,76" href="#" class="setMainMap" relX="1791"
+                                        relY="2010" alt="大分自動車道" onMouseOver="setKYUSYU('map_4-3.jpg?20180730');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="271,186,353,207" href="#" class="setMainMap" relX="1700"
+                                        relY="2856" alt="宮崎自動車道" onMouseOver="setKYUSYU('map_4-4.jpg?20180730');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="135,34,219,54" href="#" class="setMainMap" relX="1326"
+                                        relY="2027" alt="長崎自動車道" onMouseOver="setKYUSYU('map_4-5.jpg?20180730');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="81,145,161,165" href="#" class="setMainMap" relX="504"
+                                        relY="3036" alt="沖縄自動車道" onMouseOver="setKYUSYU('map_4-6.jpg?20180730');"
+                                        onMouseOut="restoreMap();" />
+                                    <area shape="rect" coords="136,177,226,198" href="#" class="setMainMap" relX="1364"
+                                        relY="3048" alt="南九州自動車道" onMouseOver="setKYUSYU('map_4-7.jpg?20180730');"
+                                        onMouseOut="restoreMap();" />
+                                </map>
+                            </li>
+                            <!--広域マップ-->
+                            <li id="sapa_map">
+                                <img src="/images/common/map_search/sapa_map.jpg" alt="SAPAマップ" id="img_sa_map"
+                                    usemap="#Map6" />
+                                <map name="Map6" id="Map6">
+                                    <area shape="circle" coords="4015,1058,7" href="#" alt="宝塚北SA" class="clickmap"
+                                        relroadname="新名神高速道路" reluplink="/sapa/3007.html" reldownlink="/sapa/3007.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="4469,928,7" href="#" alt="黒丸PA" class="clickmap"
+                                        relroadname="名神高速道路" reluplink="/sapa/2018.html" reldownlink="/sapa/2021.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="4399,958,7" href="#" alt="菩提寺PA" class="clickmap"
+                                        relroadname="名神高速道路" reluplink="/sapa/2023.html" reldownlink="/sapa/2016.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="4347,995,7" href="#" alt="草津PA" class="clickmap"
+                                        relroadname="名神高速道路" reluplink="/sapa/2026.html" reldownlink="/sapa/2013.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="4303,982,7" href="#" alt="大津SA" class="clickmap"
+                                        relroadname="名神高速道路" reluplink="/sapa/2028.html" reldownlink="/sapa/2011.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="4228,1014,7" href="#" alt="桂川PA" class="clickmap"
+                                        relroadname="名神高速道路" reluplink="/sapa/2007.html" reldownlink="/sapa/2032.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="4111,1125,7" href="#" alt="吹田SA" class="clickmap"
+                                        relroadname="名神高速道路" reluplink="/sapa/2004.html" reldownlink="/sapa/2035.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="4135,1044,9" href="#" alt="茨木千提寺PA" class="clickmap"
+                                        relroadname="新名神高速道路" reluplink="/sapa/3006.html" reldownlink="/sapa/3005.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="4166,1175,7" href="#" alt="東大阪PA" class="clickmap"
+                                        relroadname="近畿自動車道" reluplink="/sapa/2087.html" reldownlink="" relupImg="3"
+                                        reldownImg="" />
+                                    <area shape="circle" coords="4142,1211,7" href="#" alt="八尾PA" class="clickmap"
+                                        relroadname="近畿自動車道" reluplink="" reldownlink="/sapa/3701.html" relupImg=""
+                                        reldownImg="4" />
+                                    <area shape="circle" coords="4202,1256,7" href="#" alt="香芝SA" class="clickmap"
+                                        relroadname="西名阪自動車道" reluplink="/sapa/2052.html" reldownlink="/sapa/2048.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="4278,1219,7" href="#" alt="天理PA" class="clickmap"
+                                        relroadname="西名阪自動車道" reluplink="/sapa/2056.html" reldownlink="/sapa/2044.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="4071,1356,7" href="#" alt="岸和田SA" class="clickmap"
+                                        relroadname="阪和自動車道" reluplink="/sapa/2075.html" reldownlink="/sapa/2093.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="3987,1432,7" href="#" alt="紀ノ川SA" class="clickmap"
+                                        relroadname="阪和自動車道" reluplink="/sapa/2072.html" reldownlink="/sapa/2096.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="3988,1727,7" href="#" alt="印南SA" class="clickmap"
+                                        relroadname="阪和自動車道" reluplink="/sapa/2059.html" reldownlink="/sapa/2104.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="3954,1591,7" href="#" alt="吉備湯浅PA" class="clickmap"
+                                        relroadname="湯浅御坊道路" reluplink="/sapa/2066.html" reldownlink="/sapa/2100.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="3938,915,7" href="#" alt="西紀SA" class="clickmap"
+                                        relroadname="舞鶴若狭自動車道" reluplink="/sapa/2124.html" reldownlink="/sapa/2117.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="3947,812,7" href="#" alt="六人部PA" class="clickmap"
+                                        relroadname="舞鶴若狭自動車道" reluplink="/sapa/2126.html" reldownlink="/sapa/2115.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="3914,1201,7" href="#" alt="垂水PA" class="clickmap"
+                                        relroadname="第二神明道路" reluplink="/sapa/2143.html" reldownlink="" relupImg="1"
+                                        reldownImg="" />
+                                    <area shape="circle" coords="3889,1199,7" href="#" alt="名谷PA" class="clickmap"
+                                        relroadname="第二神明道路" reluplink="" reldownlink="/sapa/2141.html" relupImg=""
+                                        reldownImg="2" />
+                                    <area shape="circle" coords="3827,1165,7" href="#" alt="明石SA" class="clickmap"
+                                        relroadname="第二神明道路" reluplink="/sapa/2147.html" reldownlink="/sapa/2137.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="4015,1089,7" href="#" alt="西宮名塩SA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2219.html" reldownlink="/sapa/2213.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3944,1056,7" href="#" alt="赤松PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2222.html" reldownlink="/sapa/2210.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3857,1029,7" href="#" alt="社PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2225.html" reldownlink="/sapa/2207.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3750,1012,7" href="#" alt="加西SA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2228.html" reldownlink="/sapa/2204.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3663,993,7" href="#" alt="安富PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2230.html" reldownlink="/sapa/2202.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3587,964,7" href="#" alt="揖保川PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2232.html" reldownlink="/sapa/2200.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3511,972,7" href="#" alt="上月PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2234.html" reldownlink="/sapa/2198.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3383,950,7" href="#" alt="勝央SA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2237.html" reldownlink="/sapa/2195.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3197,975,7" href="#" alt="真庭PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2243.html" reldownlink="/sapa/2189.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3093,960,7" href="#" alt="大佐SA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2245.html" reldownlink="/sapa/2187.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2947,1041,7" href="#" alt="帝釈峡PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2249.html" reldownlink="/sapa/2183.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2792,1083,7" href="#" alt="七塚原SA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2252.html" reldownlink="/sapa/2180.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2616,1162,7" href="#" alt="本郷PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2256.html" reldownlink="/sapa/2176.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2551,1214,7" href="#" alt="安佐SA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2174.html" reldownlink="/sapa/2258.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="2359,1294,7" href="#" alt="吉和SA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2262.html" reldownlink="/sapa/2170.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2180,1448,7" href="#" alt="鹿野SA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2267.html" reldownlink="/sapa/2165.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2025,1475,7" href="#" alt="湯田温泉PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2271.html" reldownlink="/sapa/2161.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="1947,1475,7" href="#" alt="美東SA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2273.html" reldownlink="/sapa/2159.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="1874,1493,7" href="#" alt="伊佐PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2275.html" reldownlink="/sapa/2157.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="1767,1533,7" href="#" alt="王司PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2278.html" reldownlink="/sapa/2154.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3935,1087,7" href="#" alt="淡河PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2346.html" reldownlink="/sapa/2343.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3843,1097,7" href="#" alt="三木SA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2350.html" reldownlink="/sapa/2341.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3782,1084,7" href="#" alt="権現湖PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2352.html" reldownlink="/sapa/2339.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3668,1061,7" href="#" alt="白鳥PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2355.html" reldownlink="/sapa/2336.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3598,1086,7" href="#" alt="龍野西SA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2358.html" reldownlink="/sapa/2333.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3470,1121,7" href="#" alt="福石PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2361.html" reldownlink="/sapa/2331.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3372,1128,7" href="#" alt="瀬戸PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2364.html" reldownlink="/sapa/2328.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3275,1167,7" href="#" alt="吉備SA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2367.html" reldownlink="/sapa/2325.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3137,1247,7" href="#" alt="道口PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2372.html" reldownlink="/sapa/2322.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3049,1265,7" href="#" alt="篠坂PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2375.html" reldownlink="/sapa/2319.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2968,1296,7" href="#" alt="福山SA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2377.html" reldownlink="/sapa/2317.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2878,1306,7" href="#" alt="八幡PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2380.html" reldownlink="/sapa/2314.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2800,1320,7" href="#" alt="高坂PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2382.html" reldownlink="/sapa/2312.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2731,1325,7" href="#" alt="小谷SA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2385.html" reldownlink="/sapa/2309.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2624,1306,7" href="#" alt="奥屋PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2388.html" reldownlink="/sapa/2306.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2520,1298,7" href="#" alt="沼田PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2391.html" reldownlink="/sapa/2303.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2454,1356,7" href="#" alt="宮島SA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2301.html" reldownlink="/sapa/2393.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="2342,1523,7" href="#" alt="玖珂PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2399.html" reldownlink="/sapa/2297.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2242,1558,7" href="#" alt="下松SA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2402.html" reldownlink="/sapa/2294.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2112,1542,7" href="#" alt="富海PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2405.html" reldownlink="/sapa/2291.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2026,1536,7" href="#" alt="佐波川SA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2408.html" reldownlink="/sapa/2289.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3144,811,7" href="#" alt="蒜山高原SA" class="clickmap"
+                                        relroadname="米子自動車道" reluplink="/sapa/2440.html" reldownlink="/sapa/2433.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="3041,723,7" href="#" alt="大山PA" class="clickmap"
+                                        relroadname="米子自動車道" reluplink="/sapa/2444.html" reldownlink="/sapa/2429.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="2825,706,7" href="#" alt="宍道湖SA" class="clickmap"
+                                        relroadname="山陰自動車道" reluplink="/sapa/2457.html" reldownlink="/sapa/2454.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3160,1051,7" href="#" alt="高梁SA" class="clickmap"
+                                        relroadname="岡山自動車道" reluplink="/sapa/2426.html" reldownlink="/sapa/2419.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="2509,1270,7" href="#" alt="久地PA" class="clickmap"
+                                        relroadname="広島自動車道" reluplink="/sapa/2846.html" reldownlink="/sapa/2849.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="3536,1527,7" href="#" alt="上板SA" class="clickmap"
+                                        relroadname="徳島自動車道" reluplink="/sapa/2494.html" reldownlink="/sapa/2489.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3267,1576,7" href="#" alt="吉野川SA" class="clickmap"
+                                        relroadname="徳島自動車道" reluplink="/sapa/2499.html" reldownlink="/sapa/2484.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3028,1641,7" href="#" alt="入野PA" class="clickmap"
+                                        relroadname="松山自動車道" reluplink="/sapa/2572.html" reldownlink="/sapa/2526.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2867,1677,7" href="#" alt="石鎚山SA" class="clickmap"
+                                        relroadname="松山自動車道" reluplink="/sapa/2575.html" reldownlink="/sapa/2523.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2678,1742,7" href="#" alt="伊予灘SA" class="clickmap"
+                                        relroadname="松山自動車道" reluplink="/sapa/2580.html" reldownlink="/sapa/2518.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2627,1861,7" href="#" alt="内子PA" class="clickmap"
+                                        relroadname="松山自動車道" reluplink="/sapa/2582.html" reldownlink="/sapa/2516.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3289,1437,7" href="#" alt="府中湖PA" class="clickmap"
+                                        relroadname="高松自動車道" reluplink="/sapa/2563.html" reldownlink="/sapa/2535.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3147,1560,7" href="#" alt="豊浜SA" class="clickmap"
+                                        relroadname="高松自動車道" reluplink="/sapa/2568.html" reldownlink="/sapa/2530.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3591,1507,7" href="#" alt="鳴門西PA" class="clickmap"
+                                        relroadname="高松自動車道" reluplink="/sapa/2550.html" reldownlink="/sapa/2547.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3476,1445,7" href="#" alt="津田の松原SA" class="clickmap"
+                                        relroadname="高松自動車道" reluplink="/sapa/2556.html" reldownlink="/sapa/2542.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3114,1852,7" href="#" alt="南国SA" class="clickmap"
+                                        relroadname="高知自動車道" reluplink="/sapa/2477.html" reldownlink="/sapa/2506.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="3134,1737,7" href="#" alt="立川PA" class="clickmap"
+                                        relroadname="高知自動車道" reluplink="/sapa/2503.html" reldownlink="" relupImg="3"
+                                        reldownImg="" />
+                                    <area shape="circle" coords="3132,1684,7" href="#" alt="馬立PA" class="clickmap"
+                                        relroadname="高知自動車道" reluplink="" reldownlink="/sapa/2480.html" relupImg=""
+                                        reldownImg="4" />
+                                    <area shape="circle" coords="1748,1582,7" href="#" alt="壇之浦PA" class="clickmap"
+                                        relroadname="関門自動車道" reluplink="/sapa/2656.html" reldownlink="" relupImg="3"
+                                        reldownImg="" />
+                                    <area shape="circle" coords="1752,1608,7" href="#" alt="めかりPA" class="clickmap"
+                                        relroadname="関門自動車道" reluplink="" reldownlink="/sapa/2652.html" relupImg=""
+                                        reldownImg="4" />
+                                    <area shape="circle" coords="1736,1653,7" href="#" alt="吉志PA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2650.html" reldownlink="/sapa/2659.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1614,1695,7" href="#" alt="直方PA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="" reldownlink="/sapa/2646.html" relupImg=""
+                                        reldownImg="2" />
+                                    <area shape="circle" coords="1597,1719,7" href="#" alt="鞍手PA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2663.html" reldownlink="" relupImg="1"
+                                        reldownImg="" />
+                                    <area shape="circle" coords="1508,1724,7" href="#" alt="古賀SA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2644.html" reldownlink="/sapa/2665.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1497,1823,7" href="#" alt="須恵PA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2641.html" reldownlink="/sapa/2668.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1508,1904,7" href="#" alt="基山PA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2638.html" reldownlink="/sapa/2671.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1503,2030,7" href="#" alt="広川SA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2635.html" reldownlink="/sapa/2674.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1495,2108,7" href="#" alt="山川PA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2633.html" reldownlink="/sapa/2866.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1526,2181,7" href="#" alt="玉名PA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2631.html" reldownlink="/sapa/2864.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1603,2273,7" href="#" alt="北熊本SA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2628.html" reldownlink="/sapa/2860.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1609,2375,7" href="#" alt="緑川PA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2623.html" reldownlink="/sapa/2686.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1571,2473,7" href="#" alt="宮原SA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2621.html" reldownlink="/sapa/2688.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1562,2551,7" href="#" alt="坂本PA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2619.html" reldownlink="/sapa/2865.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1601,2662,7" href="#" alt="山江SA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2618.html" reldownlink="/sapa/2861.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1615,2771,7" href="#" alt="えびのPA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2616.html" reldownlink="/sapa/2862.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1552,2923,7" href="#" alt="溝辺PA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2611.html" reldownlink="/sapa/2698.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1516,2982,7" href="#" alt="桜島SA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2867.html" reldownlink="/sapa/2868.html"
+                                        relupImg="2" reldownImg="1" />
+                                    <area shape="circle" coords="1688,2839,7" href="#" alt="霧島SA" class="clickmap"
+                                        relroadname="宮崎自動車道" reluplink="/sapa/2699.html" reldownlink="/sapa/2696.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="1812,2956,7" href="#" alt="山之口SA" class="clickmap"
+                                        relroadname="宮崎自動車道" reluplink="/sapa/2703.html" reldownlink="/sapa/2692.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="1216,2279,7" href="#" alt="今村PA" class="clickmap"
+                                        relroadname="長崎自動車道" reluplink="" reldownlink="/sapa/2717.html" relupImg=""
+                                        reldownImg="4" />
+                                    <area shape="circle" coords="1209,2235,7" href="#" alt="木場PA" class="clickmap"
+                                        relroadname="長崎自動車道" reluplink="/sapa/2747.html" reldownlink="" relupImg="3"
+                                        reldownImg="" />
+                                    <area shape="circle" coords="1190,2174,7" href="#" alt="大村湾PA" class="clickmap"
+                                        relroadname="長崎自動車道" reluplink="/sapa/2720.html" reldownlink="/sapa/2745.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1226,2083,7" href="#" alt="川登SA" class="clickmap"
+                                        relroadname="長崎自動車道" reluplink="/sapa/2723.html" reldownlink="/sapa/2742.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1261,2023,7" href="#" alt="多久西PA" class="clickmap"
+                                        relroadname="長崎自動車道" reluplink="/sapa/2725.html" reldownlink="/sapa/2740.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1387,1979,7" href="#" alt="金立SA" class="clickmap"
+                                        relroadname="長崎自動車道" reluplink="/sapa/2736.html" reldownlink="/sapa/2729.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="1624,1965,7" href="#" alt="山田SA" class="clickmap"
+                                        relroadname="大分自動車道" reluplink="/sapa/2786.html" reldownlink="/sapa/2776.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="1793,2016,7" href="#" alt="玖珠SA" class="clickmap"
+                                        relroadname="大分自動車道" reluplink="/sapa/2791.html" reldownlink="/sapa/2771.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="1941,2026,7" href="#" alt="由布岳PA" class="clickmap"
+                                        relroadname="大分自動車道" reluplink="/sapa/2796.html" reldownlink="/sapa/2766.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="1996,2009,7" href="#" alt="別府湾SA" class="clickmap"
+                                        relroadname="東九州自動車道" reluplink="/sapa/2765.html" reldownlink="/sapa/2797.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="536,2987,7" href="#" alt="伊芸SA" class="clickmap"
+                                        relroadname="沖縄自動車道" reluplink="/sapa/2835.html" reldownlink="/sapa/2818.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="468,3100,7" href="#" alt="中城PA" class="clickmap"
+                                        relroadname="沖縄自動車道" reluplink="/sapa/2829.html" reldownlink="/sapa/2824.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="4463,1031,7" href="#" alt="甲南PA" class="clickmap"
+                                        relroadname="新名神高速道路" reluplink="/sapa/3002.html" reldownlink="/sapa/3001.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3727,1111,7" href="#" alt="別所PA" class="clickmap"
+                                        relroadname="姫路バイパス" reluplink="/sapa/3112.html" reldownlink="/sapa/3111.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3432,1559,7" href="#" alt="阿波PA" class="clickmap"
+                                        relroadname="徳島自動車道" reluplink="/sapa/2496.html" reldownlink="/sapa/2487.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="4016,747,7" href="#" alt="綾部PA" class="clickmap"
+                                        relroadname="舞鶴若狭自動車道" reluplink="/sapa/2129.html" reldownlink="/sapa/2112.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="1564,1951,7" href="#" alt="井上PA" class="clickmap"
+                                        relroadname="大分自動車道" reluplink="" reldownlink="/sapa/2781.html" relupImg=""
+                                        reldownImg="6" />
+                                    <area shape="circle" coords="4208,677,7" href="#" alt="加斗PA" class="clickmap"
+                                        relroadname="舞鶴若狭自動車道" reluplink="/sapa/2134.html" reldownlink="/sapa/2133.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="2085,1466,7" href="#" alt="荷卸峠PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2269.html" reldownlink="/sapa/2163.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2530,1095,7" href="#" alt="寒曳山PA" class="clickmap"
+                                        relroadname="浜田自動車道" reluplink="/sapa/2467.html" reldownlink="/sapa/2464.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="1589,2835,7" href="#" alt="吉松PA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2614.html" reldownlink="/sapa/2863.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1913,2896,7" href="#" alt="宮崎PA" class="clickmap"
+                                        relroadname="東九州自動車道" reluplink="/sapa/3201.html" reldownlink="/sapa/3202.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="4229,1084,7" href="#" alt="京田辺PA" class="clickmap"
+                                        relroadname="第二京阪道路" reluplink="/sapa/3100.html" reldownlink="/sapa/3200.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="2411,1033,7" href="#" alt="金城PA" class="clickmap"
+                                        relroadname="浜田自動車道" reluplink="/sapa/2470.html" reldownlink="/sapa/2461.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="2710,1120,7" href="#" alt="江の川PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2254.html" reldownlink="/sapa/2178.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3190,1483,7" href="#" alt="高瀬PA" class="clickmap"
+                                        relroadname="高松自動車道" reluplink="/sapa/2533.html" reldownlink="/sapa/2565.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1602,2989,7" href="#" alt="国分PA" class="clickmap"
+                                        relroadname="東九州自動車道" reluplink="/sapa/2687.html" reldownlink="/sapa/2678.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2772,1726,7" href="#" alt="桜三里PA" class="clickmap"
+                                        relroadname="松山自動車道" reluplink="/sapa/2577.html" reldownlink="/sapa/2521.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="1471,1954,7" href="#" alt="山浦PA" class="clickmap"
+                                        relroadname="長崎自動車道" reluplink="/sapa/2734.html" reldownlink="/sapa/2731.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="1840,1550,7" href="#" alt="周防灘PA" class="clickmap"
+                                        relroadname="山陽自動車道" reluplink="/sapa/2410.html" reldownlink="/sapa/2286.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="1325,1996,7" href="#" alt="小城PA" class="clickmap"
+                                        relroadname="長崎自動車道" reluplink="/sapa/2738.html" reldownlink="/sapa/2727.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3932,1035,7" href="#" alt="上荒川PA" class="clickmap"
+                                        relroadname="舞鶴若狭自動車道" reluplink="/sapa/2121.html" reldownlink="/sapa/2120.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="3100,1622,7" href="#" alt="上分PA" class="clickmap"
+                                        relroadname="松山自動車道" reluplink="/sapa/2569.html" reldownlink="/sapa/2529.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3221,901,7" href="#" alt="上野PA" class="clickmap"
+                                        relroadname="米子自動車道" reluplink="/sapa/2438.html" reldownlink="/sapa/2435.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="2297,1345,7" href="#" alt="深谷PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2263.html" reldownlink="/sapa/2169.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3018,985,7" href="#" alt="神郷PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2247.html" reldownlink="/sapa/2185.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="1870,2052,7" href="#" alt="水分PA" class="clickmap"
+                                        relroadname="大分自動車道" reluplink="/sapa/2794.html" reldownlink="/sapa/2768.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="1930,2915,7" href="#" alt="清武PA" class="clickmap"
+                                        relroadname="宮崎自動車道" reluplink="/sapa/2705.html" reldownlink="/sapa/2690.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="3204,1162,7" href="#" alt="総社PA" class="clickmap"
+                                        relroadname="岡山自動車道" reluplink="/sapa/2424.html" reldownlink="/sapa/2421.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="1595,1939,7" href="#" alt="大刀洗PA" class="clickmap"
+                                        relroadname="大分自動車道" reluplink="/sapa/3102.html" reldownlink="" relupImg="5"
+                                        reldownImg="" />
+                                    <area shape="circle" coords="2104,2098,7" href="#" alt="大分松岡PA" class="clickmap"
+                                        relroadname="東九州自動車道" reluplink="/sapa/3501.html" reldownlink="/sapa/2801.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1632,2325,7" href="#" alt="託麻PA" class="clickmap"
+                                        relroadname="九州自動車道" reluplink="/sapa/2626.html" reldownlink="/sapa/2683.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="3186,1602,7" href="#" alt="池田PA" class="clickmap"
+                                        relroadname="徳島自動車道" reluplink="/sapa/2501.html" reldownlink="/sapa/2482.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2222,1369,7" href="#" alt="朝倉PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2265.html" reldownlink="/sapa/2167.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="2998,1938,7" href="#" alt="土佐PA" class="clickmap"
+                                        relroadname="高知自動車道" reluplink="/sapa/2473.html" reldownlink="/sapa/2510.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="2428,1238,7" href="#" alt="筒賀PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2260.html" reldownlink="/sapa/2172.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="3442,966,7" href="#" alt="楢原PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2235.html" reldownlink="/sapa/2197.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="4121,930,7" href="#" alt="南丹PA" class="clickmap"
+                                        relroadname="京都縦貫自動車道" reluplink="/sapa/3302.html" reldownlink="/sapa/3301.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="3320,937,7" href="#" alt="二宮PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2239.html" reldownlink="/sapa/2193.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="1739,2889,7" href="#" alt="日向高崎PA" class="clickmap"
+                                        relroadname="宮崎自動車道" reluplink="/sapa/2701.html" reldownlink="/sapa/2694.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="1704,1987,7" href="#" alt="萩尾PA" class="clickmap"
+                                        relroadname="大分自動車道" reluplink="/sapa/2788.html" reldownlink="/sapa/2774.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="3252,943,7" href="#" alt="美作追分PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2241.html" reldownlink="/sapa/2191.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="1368,3031,7" href="#" alt="美山PA" class="clickmap"
+                                        relroadname="南九州西回り<br />自動車道" reluplink="/sapa/2596.html"
+                                        reldownlink="/sapa/2603.html" relupImg="6" reldownImg="5" />
+                                    <area shape="circle" coords="4089,695,7" href="#" alt="舞鶴PA" class="clickmap"
+                                        relroadname="舞鶴若狭自動車道" reluplink="/sapa/2132.html" reldownlink="/sapa/2109.html"
+                                        relupImg="5" reldownImg="6" />
+                                    <area shape="circle" coords="2867,1070,7" href="#" alt="本村PA" class="clickmap"
+                                        relroadname="中国自動車道" reluplink="/sapa/2250.html" reldownlink="/sapa/2182.html"
+                                        relupImg="1" reldownImg="2" />
+                                    <area shape="circle" coords="1980,2715,7" href="#" alt="川南PA" class="clickmap"
+                                        relroadname="東九州自動車道" reluplink="/sapa/3401.html" reldownlink="/sapa/3402.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="2768,752,7" href="#" alt="加茂岩倉PA" class="clickmap"
+                                        relroadname="松江自動車道" reluplink="/sapa/3602.html" reldownlink="/sapa/3601.html"
+                                        relupImg="7" reldownImg="8" />
+                                    <area shape="circle" coords="1730,1742,7" href="#" alt="今川PA" class="clickmap"
+                                        relroadname="東九州自動車道" reluplink="/sapa/3801.html" reldownlink="/sapa/3802.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="1840,1855,7" href="#" alt="上毛PA" class="clickmap"
+                                        relroadname="東九州自動車道" reluplink="/sapa/3811.html" reldownlink="/sapa/3812.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="3622,1521,7" href="#" alt="松茂PA" class="clickmap"
+                                        relroadname="徳島自動車道" reluplink="/sapa/3821.html" reldownlink="/sapa/3822.html"
+                                        relupImg="4" reldownImg="3" />
+                                    <area shape="circle" coords="2190,2200,7" href="#" alt="佐伯弥生PA" class="clickmap"
+                                        relroadname="東九州自動車道" reluplink="/sapa/3831.html" reldownlink="" relupImg="4"
+                                        reldownImg="" />
+                                </map>
+                                <p id="map_footer"><img src="/images/common/map_search/map_footer.png" width="583"
+                                        height="29" alt="SAPAマーク説明" /></p>
+                                <p id="btn_wide"><a class="popup" rel="1000,562" href="/wide_map.html"><img
+                                            src="/images/common/map_search/btn_wide.gif" width="142" height="23"
+                                            alt="大きい地図で見る" /></a></p>
+                                <div id="sapa_baloon" relflg="">
+                                    <div id="sapa_baloon_inner">
+                                        <h5>舞鶴若狭自動車道</h5>
+                                        <p id="sapa_name">○○PA</p>
+                                        <p id="sapa_updown">
+                                            <span id="sapa_up"><a href="#"><img
+                                                        src="/images/common/map_search/l_down.jpg"
+                                                        alt="上り" /></a></span>
+                                            <span id="sapa_down"><a href="#"><img
+                                                        src="/images/common/map_search/l_up.jpg" alt="下り" /></a></span>
+                                        </p>
+                                    </div>
+                                    <div id="sapa_baloon_foot">&nbsp;</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--△左側・エリア別路線絞り込みマップ-->
+                        <p class="to_map_search"><a href="/map_search/to_sp.html">スマホ版「地図から探す」のご案内はこちら</a></p>
+                    </li>
+                    <!--△パネル2枚目(地図から探す)-->
+                </ul>
+            </div>
+        </div>
+        <!--△パネル-->
+        <div id="header_link">
+            <ul>
+                <li><a href="/en/" id="pcEn">ENGLISH</a></li>
+                <li><a href="/cn/" id="pcCn">簡体字</a></li>
+                <li><a href="/tw/" id="pcTw">繁体字</a></li>
+                <li><a href="/kr/" id="pcKr">한국어</a></li>
+                <li class="on"><a href="/">日本語</a></li>
+                <!--li id="multiple_conditions"><a href="/search.html">エリア名・条件から探す</a></li-->
+            </ul>
+        </div>
+        <!-- ▼コンテンツここから -->
+        <div id="contents" class="clearfix">
+            <p id="pan_list"><a href="/">HOME</a>
+                &gt; <a href="/special/">特集・シーンから探す</a> &gt; GWのおすすめグルメ＆お土産特集</p>
+            <!-- ▼メインコンテンツここから-->
+            <div id="sapa_main">
+
+
+
+                <div class="caution red paragraph">
+                    当サイトの掲載価格は、購入される商品やご利用形態により異なる場合があります。ご購入時に各店舗でご確認ください。
+                </div>
+                <link href="/css/souvenir.css" rel="stylesheet" type="text/css">
+                <div class="souvenir">
+                    <div class="hero_area">
+                        <h1><img src="/special/images/gourmet/souvenir/omiyage_2022sp/mv.jpg" alt="GWのおすすめグルメ＆お土産特集">
+                        </h1>
+                        <p>GWにおすすめの地域グルメ、おみやげを集めました！<br>期間限定や地域限定のSA・PAイチ押し情報はこちらから！！</p>
+                    </div>
+                    <div class="area_top">
+                        <div class="wrap kansai">
+                            <h2 class="area_ttl"><a href="/special/gourmet/souvenir_kansai.html">関西エリア</a></h2>
+                            <div class="col_wrap">
+                                <div class="col_box">
+                                    <img src="/special/images/gourmet/souvenir/omiyage_2022sp/kan_top01.jpg"
+                                        alt="関西エリア">
+                                    <h3 class="sub_ttl">新作ラーメン特集</h3>
+                                    <p>高速道路でこんなラーメンが食べられるなんて！新作ラーメンが大集合！</p>
+                                    <p class="btn"><a href="/special/gourmet/souvenir_kansai.html#kansai01">詳細はこちら</a>
+                                    </p>
+                                </div>
+                                <div class="col_box">
+                                    <img src="/special/images/gourmet/souvenir/omiyage_2022sp/kan_top02.jpg"
+                                        alt="関西エリア">
+                                    <h3 class="sub_ttl">新定番土産特集</h3>
+                                    <p>お土産といえば高速道路！近年、定番土産が変わってきています。</p>
+                                    <p class="btn"><a href="/special/gourmet/souvenir_kansai.html#kansai02">詳細はこちら</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap chugoku">
+                            <h2 class="area_ttl"><a href="/special/gourmet/souvenir_chugoku.html">中国エリア</a></h2>
+                            <div class="col_wrap">
+                                <div class="col_box">
+                                    <img src="/special/images/gourmet/souvenir/omiyage_2022sp/chu_top01.jpg"
+                                        alt="晋作おもてなし御膳">
+                                    <h3 class="sub_ttl">ご当地特選！<br>とっておきメニュー！</h3>
+                                    <p>ここでしか味わえないご当地グルメが盛りだくさん！地元の『とっておき』を召し上がれ！</p>
+                                    <p class="btn"><a href="/special/gourmet/souvenir_chugoku.html#chugoku01">詳細はこちら</a>
+                                    </p>
+                                </div>
+                                <div class="col_box">
+                                    <img src="/special/images/gourmet/souvenir/omiyage_2022sp/chu_top02.jpg"
+                                        alt="瀬戸田レモンケーキ＆マドレーヌ6個詰め合わせ">
+                                    <h3 class="sub_ttl">ご当地お土産図鑑！</h3>
+                                    <p>これを買えば間違いない！そんなご当地土産を集めました！！</p>
+                                    <p class="btn"><a href="/special/gourmet/souvenir_chugoku.html#chugoku02">詳細はこちら</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap shikoku">
+                            <h2 class="area_ttl"><a href="/special/gourmet/souvenir_shikoku.html">四国エリア</a></h2>
+                            <div class="col_wrap">
+                                <div class="col_box">
+                                    <img src="/special/images/gourmet/souvenir/omiyage_2022sp/shi_top01.jpg"
+                                        alt="鰹タタキのだし茶漬け">
+                                    <h3 class="sub_ttl">地元の魅力再発見！<br>高校生開発メニュー！</h3>
+                                    <p>四国県内の高校生が考案し、地域の食材を活かしたメニューや新たな食べ方を提案したメニューが誕生！</p>
+                                    <p class="btn"><a href="/special/gourmet/souvenir_shikoku.html#shikoku01">詳細はこちら</a>
+                                    </p>
+                                </div>
+                                <div class="col_box">
+                                    <img src="/special/images/gourmet/souvenir/omiyage_2022sp/shi_top02.jpg"
+                                        alt="プレミアム鳴門金時ソフト">
+                                    <h3 class="sub_ttl">ご当地テイクアウト！</h3>
+                                    <p class="row3">手軽で美味しいご当地テイクアウトが盛りだくさん！四国ならではの味をお楽しみください！</p>
+                                    <p class="btn"><a href="/special/gourmet/souvenir_shikoku.html#shikoku02">詳細はこちら</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap kyushu">
+                            <h2 class="area_ttl"><a href="/special/gourmet/souvenir_kyushu.html">九州エリア</a></h2>
+                            <div class="col_wrap">
+                                <div class="col_box">
+                                    <img src="/special/images/gourmet/souvenir/omiyage_2022sp/kyu_top01.jpg"
+                                        alt="山荘無量塔　いりこ味噌">
+                                    <h3 class="sub_ttl">自分へのご褒美！～ちょっといいもの、おうちごはん～</h3>
+                                    <p>せっかくのGW、いつもよりちょっと贅沢なごはんを楽しみませんか？ご飯のお供にぴったりな九州各地の逸品を集めました！</p>
+                                    <p class="btn"><a href="/special/gourmet/souvenir_kyushu.html#kyushu01">詳細はこちら</a>
+                                    </p>
+                                </div>
+                                <div class="col_box">
+                                    <img src="/special/images/gourmet/souvenir/omiyage_2022sp/kyu_top02.jpg"
+                                        alt="食べ比べうどんセット">
+                                    <h3 class="sub_ttl">たくさん食べて元気をつけよう！お得なセットメニュー紹介！</h3>
+                                    <p>1品だけじゃ物足りない！お腹ペコペコな貴方におすすめ！たくさん食べて、運転の疲れを吹き飛ばしましょう！</p>
+                                    <p class="btn"><a href="/special/gourmet/souvenir_kyushu.html#kyushu02">詳細はこちら</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bnr_area">
+                        <a href="https://yuyu-west.com/" target="_blank"><img
+                                src="/special/images/gourmet/souvenir/yuyu_souvenir.jpg" alt="悠々WEST"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ▲メインコンテンツここまで -->
+            <!-- ▼サイドバーここから -->
+            <div id="sapa_sidebar">
+                <div id="sub_contents">
+                    <!--▽特集カテゴリ-->
+                    <div class="side_content">
+                        <h2 class="side_ttl side_ttl_2">特集カテゴリ</h2>
+                        <ul id="pick_up_list">
+                            <li><a href="/special/index.html#category_1"><img
+                                        src="/special/images/index/img_index_21.jpg" width="260" height="118"
+                                        alt="グルメ特集" /></a></li>
+                            <!-- <li><a href="/special/index.html#category_2"><img src="/special/images/index/img_index_22.jpg" width="260" height="118" alt="ショッピング特集" /></a></li> -->
+                            <li><a href="/special/index.html#category_3"><img
+                                        src="/special/images/index/img_index_23.jpg" width="260" height="118"
+                                        alt="様々な楽しみ方特集" /></a></li>
+                            <!-- <li><a href="/special/index.html#category_4"><img src="/special/images/index/img_index_24.jpg" width="260" height="118" alt="遊悠ドライブ" /></a></li> -->
+                        </ul>
+                    </div>
+                    <!--▽特集カテゴリ-->
+                    <!--▽最新イベントキャンペーン情報-->
+
+
+                    <div class="side_content">
+                        <h2 class="side_ttl side_ttl_2">最新イベントキャンペーン情報</h2>
+                        <ul id="new_campaign_info">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <li>
+                                <div class="campaign_detail clearfix">
+
+                                    <p class="campaign_img"><a
+                                            href="https://www.nx1.spcom.co.jp/news/archives/motenasumenu2022-0508.html"><img
+                                                src="https://www.nx1.spcom.co.jp/news/motenasumenu2022_0508_t.jpg"
+                                                width="66" height="51"
+                                                alt="「モテナス　2022年第1弾期間限定メニュー」販売開始！　～NEXCO西日本グループ34店舗～" /></a></p>
+
+                                    <p>
+
+
+
+
+
+
+
+
+                                        <p>
+
+
+                                        </p>
+                                </div>
+                                <h3>
+
+
+                                    <a
+                                        href="https://www.nx1.spcom.co.jp/news/archives/motenasumenu2022-0508.html">「モテナス　2022年第1弾期間限定メニュー」販売開始！　～NEXCO西日本グル...</a>
+
+                                </h3>
+                            </li>
+
+
+
+
+
+
+
+
+
+                            <li>
+                                <div class="campaign_detail clearfix">
+
+                                    <p class="campaign_img"><a
+                                            href="https://www.nx1.spcom.co.jp/news/archives/50th-okinawaffair.html"><img
+                                                src="https://www.nx1.spcom.co.jp/news/50th_okinawafair_t.jpg" width="66"
+                                                height="51" alt="沖縄復帰50周年記念　沖縄フェア" /></a></p>
+
+                                    <p>
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <span class="event_fair"><img src="/images/common/icon/icon_event_fair.jpg"
+                                                alt="フェア"></span>
+
+
+                                        <p>
+
+
+
+
+
+
+
+
+
+
+                                            <span class="okinawa"><img src="/images/common/icon/icon_area_okinawa.jpg"
+                                                    width="60" height="15" alt="九州沖縄エリア" /></span>
+
+
+
+
+                                        </p>
+                                </div>
+                                <h3>
+
+
+                                    <a
+                                        href="https://www.nx1.spcom.co.jp/news/archives/50th-okinawaffair.html">沖縄復帰50周年記念　沖縄フェア</a>
+
+                                </h3>
+                            </li>
+
+
+
+
+
+
+
+
+
+                            <li>
+                                <div class="campaign_detail clearfix">
+
+                                    <p class="campaign_img"><a
+                                            href="https://www.nx1.spcom.co.jp/news/archives/carea-jaf-dsr.html"><img
+                                                src="https://www.nx1.spcom.co.jp/news/carea_jaf_dsr_t.jpg" width="66"
+                                                height="51" alt="中国5県×JAF ドライブスタンプラリー" /></a></p>
+
+                                    <p>
+
+
+
+
+
+
+
+
+
+                                        <span class="event_event"><img src="/images/common/icon/icon_event_event.jpg"
+                                                alt="イベント"></span>
+
+
+
+
+
+                                        <p>
+
+
+
+
+
+
+                                            <span class="chugoku"><img src="/images/common/icon/icon_area_chugoku.jpg"
+                                                    width="60" height="15" alt="中四国エリア" /></span>
+
+
+
+
+
+
+
+
+                                            <span class="okinawa"><img src="/images/common/icon/icon_area_okinawa.jpg"
+                                                    width="60" height="15" alt="九州沖縄エリア" /></span>
+
+
+
+
+                                        </p>
+                                </div>
+                                <h3>
+
+
+                                    <a href="https://www.nx1.spcom.co.jp/news/archives/carea-jaf-dsr.html">中国5県×JAF
+                                        ドライブスタンプラリー</a>
+
+                                </h3>
+                            </li>
+
+
+
+
+
+
+                        </ul>
+                        <p class="align_right"><a href="/news/event/"><img src="/images/index/btn_index_12.jpg"
+                                    width="43" height="15" alt="一覧へ" /></a></p>
+                    </div>
+
+                    <!--△最新イベントキャンペーン情報-->
+                    <!--▽関連リンク(コンテンツ)-->
+                    <div class="side_content">
+                        <h2 class="side_ttl side_ttl_2">コンテンツ</h2>
+                        <ul id="info_bn_list">
+                            <li>
+                                <a href="/service/stamp.html"><img src="/images/index/sapakinenstamphatsubai260_90.jpg"
+                                        　width="260" height="90" />
+                                    <span>「ＳＡ・ＰＡ記念スタンプＢＯＯＫ」好評販売中！！</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ▲サイドバーここまで -->
+        </div>
+        <!-- ▲コンテンツここまで -->
+    </div>
+    <!-- ▲wrapperここまで -->
+    <!-- ▼第二フッタここから -->
+    <div id="footer2">
+        <h3>インフォメーション・お知らせ</h3>
+        <div id="footer2_inner01">
+            <ul>
+                <li><a href="/yuyu/"><img src="/images/common/img_common_info02.jpg" width="158" height="148"
+                            alt="遊・悠・West" /></a></li>
+                <li><a href="http://www.w-nexco-coms.co.jp/" target="_blank"><img
+                            src="/images/common/img_common_info_cm.jpg" width="158" height="148" alt="エリア広告のご案内" /></a>
+                </li>
+                <li><a href="https://www.w-nexco.co.jp/inquiry/" target="_blank"><img
+                            src="/images/common/img_common_info06.jpg" width="158" height="148"
+                            alt="NEXCO西日本 お客様センター" /></a></li>
+                <li><a href="/renewal/pavarie_index.html"><img src="/images/common/img_common_info08.jpg" width="158"
+                            height="148" alt="パヴァリエ" /></a></li>
+                <li><a href="/renewal/motenasu.html"><img src="/images/common/img_common_info09.jpg" width="158"
+                            height="148" alt="モテナス" /></a></li>
+            </ul>
+        </div>
+        <h3>関連リンク</h3>
+        <div id="footer2_inner02">
+            <ul class="clearfix">
+                <li><a href="http://www.michitabi.com/" target="_blank"><img src="/images/common/img_common_link04.jpg"
+                            width="185" height="65" alt="ドライブ旅行なら　みち旅" /></a></li>
+                <li><a href="https://ihighway.jp/pcsite/" target="_blank"><img
+                            src="/images/common/img_common_link06.jpg" width="185" height="65" alt="アイハイウェイ" /></a></li>
+                <li><a href="https://snd-project.jp/" target="_blank"><img src="/images/common/img_common_link07.png"
+                            width="185" height="65" alt="STOP！ NAGARA DRIVING PROJECT" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ▲第二フッタここまで -->
+    <!--// footer start//-->
+    <div id="footer">
+        <div class="footer-overnav resphone">
+            <div class="pagetop"><a href="#header">ページ上部へ戻る</a></div>
+            <div class="clearfix">
+                <dl class="search">
+                    <dt>料金・交通</dt>
+                    <dd><a href="http://search.w-nexco.co.jp/">ルート検索・料金情報</a></dd>
+                    <dd><a href="https://www.w-nexco.co.jp/realtime/">リアルタイム交通情報</a></dd>
+                    <dd><a href="https://www.w-nexco.co.jp/traffic_info/construction/">工事規制予定</a></dd>
+                    <dd><a href="http://search.w-nexco.co.jp/forecast/">渋滞データ予測</a></dd>
+                    <dd><a href="https://www.w-nexco.co.jp/drive_porter/">観光・イベント情報</a></dd>
+                    <dd><a href="https://www.w-nexco.co.jp/safety_drive/">安全・快適ドライブ</a></dd>
+                </dl>
+                <dl class="sapa">
+                    <dt>サービスエリア情報</dt>
+                    <dd><a href="https://www.w-holdings.co.jp/">サービスエリア検索</a>
+                        <ul>
+                            <li><a href="/service/">施設・サービスから探す</a></li>
+                        </ul>
+                    </dd>
+                    <dd><a href="/news/">ニュース</a></dd>
+                    <dd><a href="/news/event/">イベント・キャンペーン</a></dd>
+                    <dd><a href="/coupon/">クーポン・割引</a></dd>
+                    <dd><a href="/company/">サービスホールディングス企業情報</a></dd>
+                </dl>
+                <dl class="corporate">
+                    <dt>企業情報</dt>
+                    <dd><a href="https://corp.w-nexco.co.jp/corporate/">会社案内</a></dd>
+                    <dd><a href="https://corp.w-nexco.co.jp/activity/">事業案内</a></dd>
+                    <dd><a href="https://corp.w-nexco.co.jp/procurement/">調達・お取引</a></dd>
+                    <dd><a href="https://corp.w-nexco.co.jp/csr/">CSR情報</a></dd>
+                    <dd><a href="https://corp.w-nexco.co.jp/ir/">IR情報</a></dd>
+                    <dd><a href="https://corp.w-nexco.co.jp/recruit/">採用情報</a></dd>
+                </dl>
+                <ul class="all">
+                    <li><a href="https://corp.w-nexco.co.jp/press/">プレスルーム</a></li>
+                    <li><a href="https://www.w-nexco.co.jp/sitemap/">サイトマップ</a></li>
+                    <li><a href="https://www.w-nexco.co.jp/faq/">よくあるご質問</a></li>
+                    <li><a href="https://www.w-nexco.co.jp/inquiry/">お問い合わせ</a></li>
+                    <li><a href="https://www.w-nexco.co.jp/disabled/">お身体の不自由な方</a></li>
+                    <li class="fb clearfix"><a href="https://www.facebook.com/w.nexco" target="_blank"><img
+                                src="/images/common/icn_facebook.gif" alt="facebook" width="24" height="24"></a>
+                        <p><a href="https://www.facebook.com/w.nexco" target="_blank">facebook</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-undernav">
+            <div class="resphone">
+                <ul>
+                    <li><a href="https://corp.w-nexco.co.jp/corporate/covenant/">供用約款・営業規則等</a></li>
+                    <li><a href="https://www.w-nexco.co.jp/sitepolicy/">サイトポリシー</a></li>
+                    <li><a href="https://www.w-nexco.co.jp/privacypolicy/">プライバシーポリシー</a></li>
+                    <li><a href="https://www.w-nexco.co.jp/securitypolicy/">情報セキュリティポリシー</a></li>
+                    <li><a href="https://www.w-nexco.co.jp/disclaimer/">免責事項</a></li>
+                    <li><a href="https://www.w-nexco.co.jp/link/">リンク</a></li>
+                </ul>
+            </div>
+            <div class="disphone">
+                <ul>
+                    <li><a href="https://corp.w-nexco.co.jp/corporate/covenant/">供用約款・営業規則等</a></li>
+                    <li class="nonemg"><a href="https://www.w-nexco.co.jp/sitepolicy/">サイトポリシー</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.w-nexco.co.jp/privacypolicy/">プライバシーポリシー</a></li>
+                    <li class="nonemg"><a href="https://www.w-nexco.co.jp/securitypolicy/">情報セキュリティポリシー</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.w-nexco.co.jp/disclaimer/">免責事項</a></li>
+                    <li class="nonemg"><a href="https://www.w-nexco.co.jp/link/">リンク</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyrights &copy; West Nippon Expressway Service Holdings Company Limited All Rights Reserved.</p>
+        </div>
+    </div>
+    <!--// footer end//-->
+</body>
+
+</html>

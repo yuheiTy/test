@@ -1,0 +1,98 @@
+a:hover{
+    text-decoration: none;
+}
+.btn-area{
+    margin-top: 50px;
+}
+.btn-area ul{
+    display: flex;
+    justify-content: space-between;
+    width: 711px;
+}
+.btn-area ul li a{
+    display: block;
+    padding: 8px 40px 4px;
+    border-radius: 38px;
+    position: relative;
+    color: #000;
+    transition: .3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.kansai-btn{
+    border: 2px solid rgb(255, 193, 79);
+}
+.chugoku-btn{
+    border: 2px solid rgb(160, 255, 105);
+}
+.shikoku-btn{
+    border: 2px solid rgb(255, 253, 107);
+}
+.kyushu-btn{
+    border: 2px solid rgb(255, 148, 148);
+}
+.btn-area ul li a::after{
+    content: "";
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg) translateX(-50%);
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    transition: .3s;
+}
+.btn-area ul li a:hover::after {
+    top: 50%;
+}
+/*関西エリア*/
+.kansai{
+    background-color: antiquewhite;
+}
+.kansai .area_ttl{
+    padding-top: 40px;
+}
+.col_wrap{
+    width: 90%;
+    margin: 0 auto;
+}
+.col_box{
+    background: #fff;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+
+.button::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #000;
+    border-top: 2px solid #000;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: relative;
+    left: 10px;
+    top: -3px;
+    transition: .3s;
+}
+.button{
+    line-height: 56px;
+    font-size: 22px;
+    margin: 0px 0;
+}
+.col_box:hover .button::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #000;
+    border-top: 2px solid #000;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: relative;
+    left: 15px;
+    top: -3px;
+}

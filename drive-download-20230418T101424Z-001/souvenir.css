@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+.souvenir .hero_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.souvenir .hero_area img{
+  width:100%;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* IE */
+_:-ms-lang(x)::-ms-backdrop, .souvenir .hero_area img{
+  width:711px;
+  height: auto;
+}
+
+.souvenir .hero_area p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 0;
+  text-align: center;
+}
+.souvenir .wrap{
+  margin-bottom:50px;
+  padding-bottom:50px;
+  border-bottom:2px solid #eee;
+}
+.souvenir .wrap .area_ttl a,.souvenir .area_sub .wrap .area_ttl{
+  text-align: center;
+  font-size: 30px;
+  position:relative;
+  width:300px;
+  display:block;
+  margin:0 auto 40px;
+  color:#000;
+  transition:.3s;
+}
+.souvenir .wrap .area_ttl a:hover{
+  text-decoration: none;
+  color:#666;
+}
+
+.souvenir .col_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.souvenir  .col_box {
+  width: 48%;
+}
+
+.souvenir .col_box img {
+  border-radius: 10px;
+  width:100%;
+}
+
+.souvenir .col_box .sub_ttl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.5;
+  margin:10px 0;
+}
+
+.souvenir .col_box p {
+  font-size: 16px;
+}
+.souvenir .area_top .col_box p {
+  margin-bottom: 20px;
+}
+.souvenir .area_top .col_box p.row3{
+  height: 77px;
+}
+
+.souvenir .btn {
+  display: flex;
+  justify-content: center;
+}
+
+.souvenir .btn a {
+  display: block;
+  padding: 8px 30px 4px;
+  background: #ccc;
+  border-radius: 38px;
+  position: relative;
+  color: #fff;
+  transition: .3s;
+  border: 2px solid #ccc;
+}
+
+.souvenir .btn a:hover {
+  text-decoration: none;
+}
+
+.souvenir .btn a::after {
+  content: "";
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right:20px;
+  transition: .3s;
+}
+
+.souvenir .btn a:hover::after {
+  border-color: #ccc;
+  right: 15px;
+}
+
+
+.souvenir .wrap .area_ttl a::before,.souvenir .area_sub .wrap .area_ttl::before{
+  content:"";
+  display:inline-block;
+  position:absolute;
+  left:0px;
+}
+.souvenir .wrap .area_ttl a::after,.souvenir .area_sub .wrap .area_ttl::after{
+  content:"";
+  display:inline-block;
+  position:absolute;
+}
+.souvenir .bnr_area{
+  display: flex;
+  justify-content: center;
+  margin:50px auto 100px;
+  width:470px;
+}
+.souvenir .bnr_area img{
+  width:100%;
+  image-rendering: -webkit-optimize-contrast;
+}
+/*ボタン2つ以上*/
+.souvenir .wrap .col_box .btn:not(:first-of-type){
+  margin-top:10px;
+}
+
+/*関西----------------------------------------------*/
+
+.souvenir .wrap.kansai .area_ttl a::before,.souvenir .area_sub .wrap.kansai .area_ttl::before{
+  background:url(/special/images/gourmet/souvenir/icon_kansai01.png) no-repeat;
+  display:inline-block;
+  width:54px;
+  height:49px;
+}
+.souvenir .wrap.kansai .area_ttl a::after,.souvenir .area_sub .wrap.kansai .area_ttl::after{
+  background:url(/special/images/gourmet/souvenir/icon_kansai02.png) no-repeat;
+  width:28px;
+  height:33px;
+  right:0;
+}
+
+.souvenir .wrap.kansai .col_box .btn a {
+  background: #FEA22A;
+  border-color: #FEA22A;
+}
+
+.souvenir .wrap.kansai .col_box .btn a:hover {
+  border-color: #FEA22A;
+  color: #FEA22A;
+  background: #fff;
+}
+
+.souvenir .wrap.kansai .col_box .btn a:hover::after {
+  border-color: #FEA22A;
+}
+
+/*中国----------------------------------------------*/
+
+.souvenir .wrap.chugoku .area_ttl a::before,.souvenir .area_sub .wrap.chugoku .area_ttl::before{
+  background:url(/special/images/gourmet/souvenir/icon_chugoku01.png) no-repeat;
+  display:inline-block;
+  width:56px;
+  height:45px;
+}
+.souvenir .wrap.chugoku .area_ttl a::after,.souvenir .area_sub .wrap.chugoku .area_ttl::after{
+  background:url(/special/images/gourmet/souvenir/icon_chugoku02.png) no-repeat;
+  width:40px;
+  height:22px;
+  right:0;
+}
+
+.souvenir .wrap.chugoku .col_box .btn a {
+  background: #6EC137;
+  border-color: #6EC137;
+}
+
+.souvenir .wrap.chugoku .col_box .btn a:hover {
+  border-color: #6EC137;
+  color: #6EC137;
+  background: #fff;
+}
+
+.souvenir .wrap.chugoku .col_box .btn a:hover::after {
+  border-color: #6EC137;
+}
+
+/*四国----------------------------------------------*/
+
+.souvenir .wrap.shikoku .area_ttl a::before,.souvenir .area_sub .wrap.shikoku .area_ttl::before{
+  background:url(/special/images/gourmet/souvenir/icon_shikoku01.png) no-repeat;
+  display:inline-block;
+  width:49px;
+  height:31px;
+}
+.souvenir .wrap.shikoku .area_ttl a::after,.souvenir .area_sub .wrap.shikoku .area_ttl::after{
+  background:url(/special/images/gourmet/souvenir/icon_shikoku02.png) no-repeat;
+  width:54px;
+  height:36px;
+  right:0;
+}
+
+.souvenir .wrap.shikoku .col_box .btn a {
+  background: #48C0FF;
+  border-color: #48C0FF;
+}
+
+.souvenir .wrap.shikoku .col_box .btn a:hover {
+  border-color: #48C0FF;
+  color: #48C0FF;
+  background: #fff;
+}
+
+.souvenir .wrap.shikoku .col_box .btn a:hover::after {
+  border-color: #48C0FF;
+}
+
+/*九州----------------------------------------------*/
+
+.souvenir .wrap.kyushu .area_ttl a::before,.souvenir .area_sub .wrap.kyushu .area_ttl::before{
+  background:url(/special/images/gourmet/souvenir/icon_kyushu01.png) no-repeat;
+  display:inline-block;
+  width:58px;
+  height:36px;
+}
+.souvenir .wrap.kyushu .area_ttl a::after,.souvenir .area_sub .wrap.kyushu .area_ttl::after{
+  background:url(/special/images/gourmet/souvenir/icon_kyushu02.png) no-repeat;
+  width:49px;
+  height:32px;
+  right:0;
+}
+
+.souvenir .wrap.kyushu .col_box .btn a {
+  background: #FF7EBA;
+  border-color: #FF7EBA;
+}
+
+.souvenir .wrap.kyushu .col_box .btn a:hover {
+  border-color: #FF7EBA;
+  color: #FF7EBA;
+  background: #fff;
+}
+
+.souvenir .wrap.kyushu .col_box .btn a:hover::after {
+  border-color: #FF7EBA;
+}
+
+/*下層ページ*/
+.souvenir .hero_area p.back_top {
+  text-align: left;
+  width: 100%;
+}
+.souvenir .hero_area p.back_top a{
+  color:#46A555;
+  position: relative;
+  margin-left:20px;
+  font-weight:normal;
+  font-size:18px;
+}
+.souvenir .hero_area p.back_top a::before{
+  content:"";
+  border-left: 1px solid #46A555;
+  border-bottom: 1px solid #46A555;
+  position: absolute;
+  width:8px;
+  height: 8px;
+  transform: rotate(45deg) translateY(-50%);
+  left:-20px;
+  top:40%;
+  transition:.3s;
+}
+.souvenir .hero_area p.back_top a:hover::before{
+  left:-30px;
+}
+.souvenir .area_sub .wrap{
+  border:none;
+}
+.souvenir .area_sub .sub_ttl{
+  left:50%;
+  transform: translateX(-50%);
+  font-size:27px;
+  margin:20px 0;
+  display: inline-block;
+  position: relative;
+}
+.souvenir .area_sub .sub_ttl::after{
+  content:"";
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  bottom:5px;
+  display: inline-block;
+  height: 16px;
+  width: 100%;
+  background-size: auto auto;
+background-color: rgba(255, 255, 255, 1);
+background-image: repeating-linear-gradient(135deg, transparent, transparent 7px, rgba(255, 216, 151, 1) 7px, rgba(255, 216, 151, 1) 10px);
+  z-index: -1;
+}
+
+
+.souvenir .img_3img .col_wrap .col_box img{
+  border-radius:0;
+}
+.souvenir .img_3img .col_wrap .col_box:first-of-type{
+  width:67%;
+}
+.souvenir .img_3img .col_wrap .col_box:first-of-type img{
+  width:471px;
+}
+.souvenir .img_3img .col_wrap .col_box:last-of-type{
+  width:32%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.souvenir .img_3img .col_wrap .col_box:last-of-type img{
+  width:228px;
+}
+.souvenir .img_1img{
+  display:flex;
+  justify-content:center;
+}
+.souvenir .img_1img img{
+  width:471px;
+}
+
+.souvenir .ttl{
+  font-size:20px;
+  margin:20px 0 10px;
+}
+.souvenir p.price{
+  font-size:16px;
+  font-weight: bold;
+}
+.souvenir p.price span{
+  font-size:14px;
+}
+.souvenir p.dsc{
+  font-size:14px;
+}
+.souvenir .col_wrap.dish .col_box:first-of-type{
+  width:60%;
+}
+.souvenir .col_wrap.dish .col_box:last-of-type{
+  width:32%;
+}
+.souvenir .col_wrap.dish .col_box .btn a{
+  border-radius:8px;
+  width:66%;
+}
+.souvenir .area_topics .item:not(:last-of-type){
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+}
+
+.area_topics:not(:last-of-type) {
+  margin-bottom:100px;
+}
+.souvenir .btn_area{
+  margin: 80px 0;
+}
+.souvenir .area_list{
+  display: flex;
+  justify-content: space-between;
+}
+.souvenir .area_list .btn{
+  width:24%;
+}
+.souvenir .area_list .btn a{
+  width:100%;
+  text-align: center;
+  font-size:18px;
+  color:#000;
+  font-weight:bold;
+  background: none;
+}
+.souvenir .area_list .btn a:hover{
+  color:#fff;
+  background:#ccc;
+}
+.souvenir .area_list .btn a::after{
+  border-color:#000;
+}
+.souvenir .area_list .btn.current a {
+  color:#fff;
+  background: #ccc;
+  pointer-events: none;
+}
+.souvenir .area_list .btn a:hover::after{
+  border-color:#fff;
+}
+.souvenir .area_list .btn.current a:after{
+  display:none;
+}
+
+/*関西*/
+.souvenir .area_list .btn.kansai a{
+  border-color:#FEA22A;
+}
+.souvenir .area_list .btn.kansai a:hover{
+  background: #FEA22A;
+}
+.souvenir .area_list .btn.kansai.current a{
+  background: #FEA22A;
+}
+/*中国*/
+.souvenir .area_list .btn.chugoku a{
+  border-color:#6EC137;
+}
+.souvenir .area_list .btn.chugoku a:hover{
+  background: #6EC137;
+}
+.souvenir .area_list .btn.chugoku.current a{
+  background: #6EC137;
+}
+.souvenir .area_sub .chugoku .sub_ttl::after{
+  background-image: repeating-linear-gradient(135deg, transparent, transparent 7px, #a1ec6f 7px, #a1ec6f 10px);
+  z-index: -1;
+}
+/*四国*/
+.souvenir .area_list .btn.shikoku a{
+  border-color:#48C0FF;
+}
+.souvenir .area_list .btn.shikoku a:hover{
+  background: #48C0FF;
+}
+.souvenir .area_list .btn.shikoku.current a{
+  background: #48C0FF;
+}
+.souvenir .area_sub .shikoku .sub_ttl::after{
+  background-image: repeating-linear-gradient(135deg, transparent, transparent 7px, #87d6ff 7px, #87d6ff 10px);
+  z-index: -1;
+}
+/*九州*/
+.souvenir .area_list .btn.kyushu a{
+  border-color:#FF7EBA;
+}
+.souvenir .area_list .btn.kyushu a:hover{
+  background: #FF7EBA;
+}
+.souvenir .area_list .btn.kyushu.current a{
+  background: #FF7EBA;
+}
+.souvenir .area_sub .kyushu .sub_ttl::after{
+  background-image: repeating-linear-gradient(135deg, transparent, transparent 7px, #ffc6e1 7px, #ffc6e1 10px);
+  z-index: -1;
+}
